@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>New Tab</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="clock" class="clock-container">
+    <center><h1 id="time" class="time-header"></h1></center>
+  </div>
+
+  <br><br>
+
+  <center>
+    <div id="search">
+      <h1 style="font-size: 60px;">Focii</h1>
+      <div id="searchbox" class="searchbox-container">
+        <input id="textbox" type="text" placeholder="Search..." autocomplete="off" autofocus >
+
+        <button id="searchbtn">🔍</button>
+      </div>
+    </div>
+
+    <div id="sesel">
+      <p style="font-size:30px;"><u>Settings</u></h1>
+      <p align="left">Default Search Engine:</p>
+      <input type="radio" id="google" name="search" value="google">
+      <label for="google">Google</label>
+      <input type="radio" id="bing" name="search" value="bing">
+      <label for="bing">Bing</label>
+      <br><br><small>Open-Source Project By AceTheExams</small>
+    </div>
+
+    <div id="fav">
+      <div id="shortcut-container" class="sortable"></div>
+      <div id="add-shortcut-button-container">
+        <center><button  id="add-shortcut-button">Add Shortcut</button></center>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="close" id="close">CLOSE</div>
+          <h2>Add Shortcut</h2>
+          <p align="left" style="padding-left: 12px;">Name:</p>
+          <input type="text" id="name" class="add" name="name" required>
+          <br><br>
+          <p align="left" style="padding-left: 12px;">URL:<p>
+          <input type="url" id="url" class="add" name="url" required>
+          <br>
+          <button id="ads" class="url">Add</button>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </center>
+  
+  <div id="footer">
+    <p id="sets" class="settin"><u>Settings</u></p>
+  </div>
+
+  <script src="jq.js"></script>
+  <script src="ji.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
